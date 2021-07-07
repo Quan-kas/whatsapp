@@ -57,7 +57,7 @@ for column in excel_data['Name'].tolist():
         attachment_box = driver.find_element_by_xpath('//div[@title = "Adjuntar"]')
         attachment_box.click()
         imgvid_box = driver.find_element_by_xpath("//input[@accept='image/*,video/mp4,video/3gpp,video/quicktime']")
-        imgvid_box.send_keys(image_filename)
+        imgvid_box.send_keys(filepath)
         time.sleep(3)
         send_button = driver.find_element_by_xpath('//span[@data-icon="send-light"]')
         send_button.click()
